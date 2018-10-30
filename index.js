@@ -29,6 +29,8 @@ function showSlides() {
     } 
     slides[slideIndex-1].style.display = "block"; 
     setTimeout(showSlides, 6000);
+
+    
 }
 
 
@@ -44,10 +46,10 @@ function calculateTip() {
   
   // Quick validation
   if(billAmount === "" || serviceQuality == 0) {
-     return alert("Va rugam sa completati toate campurile!");
+     return alert("Please complete each field!");
        // this will prevent the function from continuing
   } else if ( isNaN(billAmount) || isNaN(numPeople) ){    // check if value is not a number
-    alert("Va rugam sa introduceti doar numere!");
+    alert("Please introduce only numbers!");
     return;
 }
 

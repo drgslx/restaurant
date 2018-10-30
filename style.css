@@ -17,6 +17,13 @@ p{
   font-size: 20px;
 }
 
+img {
+  height: 700px;
+  width: 100%;
+  background-size: cover;
+  
+}
+
 
 /*dialog box*/
   .dialogOverlay{
@@ -149,6 +156,9 @@ header h1{
 .slideshow-container {
   position: relative;
   margin: auto;
+  height: auto;
+  width: 100%;
+  height: 700px;
 }
 
   /* Hide the images by default */
@@ -186,34 +196,64 @@ header h1{
 
 
 
-/* Article */
+
 #about{
     padding: 30px;
     width: 100%;
     display: block;
 }
 
+#about h1 {
+  font-size: 46px;
+}
 
-#menu{
-  background-color:  rgb(39, 9, 9);
+/*  MENU  */ 
+
+#menu {
+  background-color: rgb(39, 9, 9);
   color: white;
-  padding: 30px;
-  display: block;
+  padding: 20px 10px;
 }
 
-.column-left {
-  float: left;
-  width: 45%;
+#menu .menuHeader {
+  padding: 20px;
+  margin: 15px;
 }
 
-.column-right  {
-  float: right;
-  width: 45%;
+#menu .menuHeader h1 {
+  font-size: 46px;
+}
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(39, 9, 9);
+  color: black;
+  font-size: 20px;
 }
 
 
 
+.flex-container > div {
+  justify-content: space-around;
+  background-color: #f1f1f1;
+  width: 300px;
+  flex-grow: 9;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+}
+
+.flex-container div h1 {
+  font-size: 1.5em;
+}
+
+.flex-container div h2 {
+  font-size: 0.75em;
+  text-align: left;
+  padding-left: 20px;
+}
 
 
 /*CALCULATOR*/
@@ -227,6 +267,7 @@ padding: 10px;
 
 #calculatorContainer h1{
 color: white; 
+font-size: 46px;
 }
 
 #calculator {
@@ -277,6 +318,7 @@ text-transform: uppercase;
 font-size: 18px;
 padding: 20px 30px;
 width: 100%;
+border-radius: 5px;
 }
 
 #calculator button:hover {
@@ -295,7 +337,7 @@ margin-top: 40px;
 }
 
 #totalTip:before {
-content: "Spaga";
+content: "tip";
 font-size: 14px;
 font-weight: bold;
 display: block;
@@ -324,15 +366,16 @@ display: block;
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid  #270909;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  border-radius: 6px;
 }
 
 input[type=submit] {
   background-color: #270909;
-  color: white;
+  color: whitesmoke;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
@@ -345,7 +388,8 @@ input[type=submit]:hover {
 /* Style the container/contact section */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: whitesmoke;
+  color: black;
   padding: 10px;
 }
 
@@ -370,6 +414,9 @@ input[type=submit]:hover {
       width: 100%;
       margin-top: 0;
   }
+
+  
+
 }
 
 
