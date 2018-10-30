@@ -1,0 +1,388 @@
+
+  * {
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family:Raleway, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+  font-size: 46px;
+}
+
+p{
+  font-size: 20px;
+}
+
+
+/*dialog box*/
+  .dialogOverlay{
+    display: none;
+    opacity: .8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #6c2726;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .dialogBox{
+    display: none;  
+    position: fixed;
+    background: #000;
+    border-radius: 7px;
+    width: 550px;
+    z-index: 10;
+  }
+
+  .dialogBox div {
+    background: #fff;
+    margin: 8px;
+  }
+
+  .dialogBoxHead{
+    background: #666;
+    font-size: 19px;
+    padding: 10px;
+    color: #ccc;
+  }
+
+  .dialogBoxBody{
+    background: #333;
+    padding: 20px;
+    color: #fff;
+  }
+
+  .dialogBoxFoot{
+    background: #666;
+    padding: 10px;
+    text-align: right;
+  }
+
+
+
+
+
+                                                            /* Nav */
+
+#navbar {
+  overflow: hidden;
+  background-color: rgb(39, 9, 9);
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #080101;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 10;
+  width: 100%;
+  z-index: 1;
+} 
+
+
+@media (max-width: 600px) {
+  nav, article {
+      width: 100%;
+      height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+                                                              /* Header */
+header {
+    background-color: rgb(39, 9, 9);
+    padding: 30px;
+    font-size: 35px;
+    color: white;
+}
+
+header h1{
+  font-family: 'Spirax', cursive;
+  font-size: 90px;
+}
+
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+                                                            /* SLIDESHOW */
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+                                            
+
+
+
+
+
+
+/* Article */
+#about{
+    padding: 30px;
+    width: 100%;
+    display: block;
+}
+
+
+#menu{
+  background-color:  rgb(39, 9, 9);
+  color: white;
+  padding: 30px;
+  display: block;
+}
+
+.column-left {
+  float: left;
+  width: 45%;
+}
+
+.column-right  {
+  float: right;
+  width: 45%;
+
+}
+
+
+
+
+
+/*CALCULATOR*/
+
+#calculatorContainer {
+background: #333 url('img/cutlery.jpg') center center no-repeat;
+background-size: cover;
+color: #532827;
+padding: 10px;
+}
+
+#calculatorContainer h1{
+color: white; 
+}
+
+#calculator {
+width: 400px;
+margin: 40px auto 0;
+padding: 50px;
+box-sizing: border-box;
+background: url('img/paper-pattern.jpg') top left repeat;
+box-shadow: 0 10px 15px -8px #000;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+text-align: center;
+}
+
+#calculator h1 {
+margin: 0 0 20px;
+padding: 0 0 20px;
+border-bottom: solid 1px #ddd;
+}
+
+#calculator form {
+text-align: left;
+}
+
+#calculator form label {
+display: block;
+margin: 25px 0;
+font-weight: bold;
+}
+
+#calculator form input,
+form select {
+padding: 8px;
+margin: 10px 0;
+}
+
+#calculator form input[type="text"] {
+width: 90px;
+}
+
+#calculator button {
+background: #6c2726;
+color: white;
+border: none;
+border-bottom: solid 4px #222;
+text-transform: uppercase;
+font-size: 18px;
+padding: 20px 30px;
+width: 100%;
+}
+
+#calculator button:hover {
+background: #4c2827;
+border-bottom-color: #111;
+}
+
+#calculator button:active {
+position: relative;
+top: 1px;
+}
+
+#totalTip {
+font-size: 50px;
+margin-top: 40px;
+}
+
+#totalTip:before {
+content: "Spaga";
+font-size: 14px;
+font-weight: bold;
+display: block;
+text-transform: uppercase;
+}
+
+#totalTip sup {
+font-size: 24px;
+top: -18px;
+}
+
+#totalTip small {
+font-size: 14px;
+font-weight: bold;
+display: block;
+}
+
+
+
+
+
+
+
+
+                                                  /*CONTACT*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #270909;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #080101;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+  }
+}
+
+
+
+
+
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+

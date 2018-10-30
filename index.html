@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Spirax" rel="stylesheet">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>La Nicu</title>
+  </head>
+  <body>
+  
+
+
+
+                                                 <!--NAVIGATION BAR-->
+    <div id="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="index.html#about">Despre noi</a>
+    <a href="index.html#menu">Meniu</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#calculatorContainer">Calculeaza spaga!</a>
+    </div>
+
+    <header id="header">
+      <h1>La Nicu</h1>
+    </header>
+    
+
+                                                 <!-- Slideshow container -->
+<div class="slideshow-container">
+
+                 
+  <div class="mySlides fade">
+    <img src="img/img1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/img2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/img3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/img4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/img5.jpg" style="width:100%">
+  </div>
+
+</div>                                         
+
+                                                    <!--END OF SLIDESHOW-->
+<div id="about">
+  
+      <br />
+    <h1>Despre noi</h1>
+    
+    <p>Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+        Lorem Ipsum sit dolorem...orem Ipsum sit dolorem...
+    </p>
+    
+
+  <br /><br />
+ </div>
+
+ <div id="menu">
+   <h1>Recomandarea saptamanii</h1>
+  <div class="row">
+    <div class="column-left">
+      <h2>Mic dejun</h2>
+      <p>Some text...</p><br />
+      <p>Some text..</p><br />
+      <p>Some text..</p><br />
+      <p>Some text..</p><br />
+      <p>Some text..</p><br />
+      <p>Some text..</p><br />
+      <p>Some text..</p><br />
+    </div>
+    <div class="column-right">
+      <h2>De seara</h2>
+      <p>Some text..</p><br />
+      <p>Some text..</p><br />
+      <p>Some text..</p><br />
+      <p>Some text..</p><br />
+      <p>Some text..</p><br />
+      <p>Some text..</p><br />
+      <p>Some text..</p><br />
+            
+    </div>
+  </div>
+ </div> 
+
+
+
+
+ <div id="calculatorContainer">
+
+    <br><br>
+  <h1>Calculate the tip</h1>
+  
+  <div id="calculator">
+      
+      <form>
+          <label>
+              How much was the final price?<br>
+              $ <input type="text " id="billAmount">
+          </label>
+          <label>
+              How was the service quality<br>
+              <select id="serviceQuality">
+                  <option disabled selected value="0">-- Alegeti calitatea serviciilor --</option>
+                  <option value="0.3">30% - Superb!</option>
+                  <option value="0.2">20% - Good</option>
+                  <option value="0.15">15% - Neutral</option>
+                  <option value="0.1">10% - Bad</option>
+                  <option value="0.05">5% - Fire that guy...</option>
+              </select>
+          </label>
+          <label>
+              How many people share the table?<br>
+              <input type="text" id="totalPeople"> people
+          </label>
+          <button type="button" id="calculate">Calculate</button>
+      </form>
+      
+      <div id="totalTip">
+        <span id="tip">0.00</span>
+        <small id="each">each</small>
+    </div><!-- totalTip -->
+  </div><!-- calculator -->
+  
+  
+</div><!-- container -->
+
+
+
+      
+                                                <!--CONTACT-->
+    <div class="container" id="contact" >
+     <div style="text-align:center">
+       <br />
+        <h2>Contact</h2>
+        <p>Lasati-ne un mesaj:</p>
+       <br />
+     </div>
+    <div class="row">
+      <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Nume</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Prenume</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="servicii">Feedback</label>
+        <select id="servicii" name="servicii">
+          <option value="slab">Slab</option>
+          <option value="bun">Bun</option>
+          <option value="excelent">Excelent</option>
+        </select>
+    <label for="subject">Parere/Nelamurire</label>
+    <textarea id="subject" name="subject" placeholder="Scrieti aici..." style="height:170px"></textarea>
+    <input type="submit" value="Submit">
+    </form>
+    </div>
+    </div>
+    </div>
+   
+    <footer>
+      <p>La nicu</p>
+    </footer>
+    
+    </body>
+
+</html>
