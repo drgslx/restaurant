@@ -76,11 +76,12 @@
 
     <h1>About</h1>
 
-    <button class="tablink" onclick="openPage('story', this, 'rgb(39, 9, 9')">Our story</button>
-    <button class="tablink" onclick="openPage('events', this, 'rgb(39, 9, 9')" id="defaultOpen">Events</button>
-    <button class="tablink" onclick="openPage('customers', this, 'rgb(39, 9, 9')">Happy Customers</button>
-    <button class="tablink" onclick="openPage('schedule', this, 'rgb(39, 9, 9')">Schedule</button>
-
+    <div class="button-container">
+    <button class="tablink" onclick="openPage('story', this, '#6c2726')" id="defaultOpen">Our story</button>
+    <button class="tablink" onclick="openPage('events', this, '#6c2726')" >Events</button>
+    <button class="tablink" onclick="openPage('customers', this, '#6c2726')">Happy Customers</button>
+    <button class="tablink" onclick="openPage('schedule', this, '#6c2726')">Schedule</button>
+    </div>
     <div id="story" class="tabcontent">
       <h3>Our story</h3>
       <p>Home is where the heart is..Home is where the heart is..
@@ -132,31 +133,63 @@
       <p>Here are our best dishes</p>
 
     </div>
-    <div class="flex-container">
-      <div>
+    <div class="menu-container">
+
+      <div class="menu-card">
         <h1>Appetizers</h1>
-        <h2>Onion rings</h2>
-        <h2>Meat appetizers</h2>
-        <h2>Colesaw salad</h2>
-        <h2>Another appetizer</h2>
-        <h2>Another appetizer</h2>
+        <h2 class="menu-item">Onion rings
+          <img src="https://via.placeholder.com/150" alt="">
+        </h2>
+        <h2 class="menu-item">Meat appetizers
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
+        <h2 class="menu-item">Colesaw salad
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
+        <h2 class="menu-item">Another appetizer
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
+        <h2 class="menu-item">Another appetizer
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
       </div>
-      <div>
-        <h1>Meals</h1>
-        <h2>Chicken special</h2>
-        <h2>Caessar sallad</h2>
-        <h2>Lasagna special</h2>
-        <h2>"Healthy fast-food"</h2>
-        <h2>All from meat you can eat</h2>
+      <div class="menu-card">
+        <h1>Main Dishes</h1>
+        <h2 class="menu-item">Chicken special
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
+        <h2 class="menu-item">Caessar sallad
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
+        <h2 class="menu-item">Lasagna special
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
+        <h2 class="menu-item">"Healthy fast-food"
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
+        <h2 class="menu-item">All from meat you can eat
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
       </div>
-      <div>
+      <div class="menu-card">
         <h1>Desserts</h1>
-        <h2>Chocollate cake</h2>
-        <h2>Fruit cake</h2>
-        <h2>creme broulle</h2>
-        <h2>Strawberry Ice cream</h2>
-        <h2>"best-dessert"</h2>
+        <h2 class="menu-item">Chocollate cake
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
+        <h2 class="menu-item">Fruit cake
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
+        <h2 class="menu-item">creme broulle
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
+        <h2 class="menu-item">Strawberry Ice cream
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
+        <h2 class="menu-item">"best-dessert"
+            <img src="https://via.placeholder.com/150" alt="">
+        </h2>
       </div>
+      
     </div>
 
 
