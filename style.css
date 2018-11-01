@@ -391,7 +391,7 @@ border-radius: 100px;
 }
 
 #calculator button:hover {
-background: #4c2827;
+background: rgb(39, 9, 9);
 border-bottom-color: #111;
 }
 
